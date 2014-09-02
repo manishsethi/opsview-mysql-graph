@@ -1,7 +1,11 @@
 require 'opsview_rest'
 
 # Connection Establishment
+<<<<<<< HEAD
 connection = OpsviewRest.new(ENV['SERVER_LINK'], :username => ENV['OPSVIEW_USERNAME'], :password => ENV['OPSVIEW_PASSWORD'])
+=======
+connection = OpsviewRest.new("http://ip/", :username => ENV['OPSVIEW_USERNAME'], :password => ENV['OPSVIEW_PASSWORD'])
+>>>>>>> 20e958a6fc2249448e96d8342710e5876e1ed6b5
 
 # Testing Connection
 print "#{connection.inspect}"
